@@ -12,11 +12,11 @@ def run_twitter_etl():
     consumer_secret = "VLPqOj3svKLysbdDsz70ieHbwLfgHuFj38EotwtXbUqKg"
 
 
-    # Twitter authentication
+    # Twitter authentication##
     auth = tweepy.OAuthHandler(access_key, access_secret)   
     auth.set_access_token(consumer_key, consumer_secret) 
 
-    # # # Creating an API object 
+    # # # Creating an API object ##
     api = tweepy.API(auth)
     tweets = api.user_timeline(screen_name='@elonmusk', 
                             count=200,
